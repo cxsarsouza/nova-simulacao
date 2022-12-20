@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600');
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 
-@font-face {
+/* @font-face {
   font-family: 'Ghino';
   src: url('Ghino-Black.woff2') format('woff2'),
       url('Ghino-Black.woff') format('woff');
@@ -35,7 +35,7 @@
   font-weight: bold;
   font-style: normal;
   font-display: swap;
-}
+} */
 
 
 html{
@@ -47,7 +47,7 @@ html{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Ghino', sans-serif;
+    font-family: 'Poppins', sans-serif;
   }
   
   
@@ -651,8 +651,9 @@ label a{
 label svg{
   fill: #c7c7c7;
   text-align: center;
-  width: 130px;
-  padding-top: 25px;
+  width: 110px;
+  padding-top: 25px ;
+  padding-bottom: 10px;
 }
  
 label h1 {
@@ -661,6 +662,7 @@ label h1 {
     font-size: 40px;
     color: #b6e7b2;
     margin-top: 10px;
+    letter-spacing: -2.5px;
 }  
 
 input[type=radio]:checked + label h1 {

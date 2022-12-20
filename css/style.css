@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600');
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 
-@font-face {
+
+/* @font-face {
   font-family: 'Ghino';
   src: url('Ghino-Black.woff2') format('woff2'),
       url('Ghino-Black.woff') format('woff');
@@ -35,6 +36,15 @@
   font-weight: bold;
   font-style: normal;
   font-display: swap;
+} */
+
+
+@font-face {
+  font-family: 'Mont';
+  src: url('../fonts/Mont.otf');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
 }
 
 
@@ -47,7 +57,7 @@ html{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Ghino', sans-serif;
+      font-family: 'Poppins', sans-serif;
   }
   
   
@@ -284,8 +294,8 @@ a:active{
 .more-title{
   font-weight: 700;
   color: #353535;
-  letter-spacing: -1px;
-  font-size: 41px;
+  letter-spacing: -1.5px;
+  font-size: 35px;
   text-align: center;
   margin: 0px 200px;
   display: flex;
@@ -311,6 +321,12 @@ a:active{
   margin-right: 25px;
   color: #10af00;
   font-size: 55px;
+}
+
+.i-more{
+  margin-right: 15px;
+  color: #10af00;
+  font-size: 43px;
 }
 
 .main-p{
@@ -339,7 +355,7 @@ a:active{
    .more-title{
 		margin: 0px;
     padding-top:  0px;
-    font-size: 33px;
+    font-size: 30px;
 	  }
     .title-valor{
       font-size: 15px;
@@ -374,9 +390,26 @@ a:active{
 .a-links{
   color: #10af00;
   font-style: italic;
-  font-weight: 700;
+  font-weight: 100;
   text-decoration: underline !important;
   margin-right: 6px;
+}
+
+.tel-link{
+  color: #fff;
+  background-color: #10af00;
+  border-radius: 3px;
+  padding: 1px 27px;
+  font-weight: 100;
+  text-decoration: none !important;
+  font-size: 18px;
+}
+
+.tel-link:hover{
+  color: #fff;
+  background-color: #086300;
+  text-decoration: none !important;
+  transition: .5s;
 }
 
 .a-links:hover{
@@ -449,6 +482,26 @@ a:active{
   border: 2px solid #10af00;
   transition: 0.5s;
   text-decoration: none;
+}
+
+.btn-main-3{
+  background-color: rgb(173, 32, 32);
+  font-size: 23px;
+  color: #fff;
+  border: 2px solid rgb(173, 32, 32)0;
+  padding: 4px 45px;
+  border-radius: 8px;
+  font-weight: 700;
+  text-decoration: none;
+  margin: 10px;
+}
+
+.btn-main-3:hover{
+  background-color: #ffffff;
+  color: rgb(173, 32, 32);
+  border: 2px solid rgb(173, 32, 32);
+  text-decoration: none;
+  transition: 0.5s;
 }
 
 .more-btn-1{
@@ -530,7 +583,11 @@ a:active{
     .i-main{
       margin-right: 0px;
       padding-bottom: 15px;
-    }
+    }  
+    .i-more{
+      margin-right: 0px;
+      padding-bottom: 5px;
+}
   }
 
 .border-icon {
@@ -563,7 +620,7 @@ input::placeholder {
   border-style: solid;
   border-width: 4px;
   font-size: 2.2rem;
-  padding: 0.35em 1.5em 0.5em 1.5em;
+  padding: 0.5em 1em 0.5em 1em;
   margin: 18px 0px 22px 0px;
   width: 100%;
   height: 100px;
@@ -600,12 +657,6 @@ input::placeholder {
   margin-right: 5px;
 }
 
-@media only screen and (max-width: 380px) {
-	.form__input {
-    max-width: 250px;
-    padding: 0.2em 0.9em 0.2em 0.9em;
-  }
-  }
 
 .section-valor{
   background-color: rgb(247, 247, 247);
@@ -620,7 +671,7 @@ input::placeholder {
 }
 
 .p-nome{
-  max-width: 631px;
+  max-width: 730px;
   margin-bottom: 35px;
   color: #a3a3a3;
   letter-spacing: -0.5px;
@@ -639,10 +690,11 @@ input::placeholder {
 }
 
 .h1-valor{
-  font-weight: 800;
-  font-size: 110px;
+  font-weight: 900;
+  font-size: 85px;
   color: #10af00;
-  padding-bottom: 60px;
+  padding-bottom: 10px;
+  font-family: 'Mont';
   animation: go-back 1.5s infinite alternate;
 }
 
@@ -650,9 +702,9 @@ input::placeholder {
   background-color: #10af00;
   color: #ffff;
   margin-top: 10px;
-  padding: 3px 65px 10px 65px;
+  padding: 4px 45px 4px 45px;
   border-radius: 10px;
-  font-size: 23px;
+  font-size: 22px;
   font-weight: 800;
   text-decoration: none !important;
 }
@@ -817,6 +869,7 @@ label h1 {
   font-weight: 800;
   padding-bottom: 10px;
   font-size: 45px;
+  letter-spacing: -3px;
 }
 
 label p {
@@ -883,8 +936,8 @@ label a:hover{
 @media only screen and (max-width: 600px) {
   .h1-valor{
     font-size: 80px;
-    margin-top:0px;
-    padding-bottom: 40px;
+    margin-top: 15px;
+    padding-bottom: 15px;
   }
 }
 
@@ -922,6 +975,16 @@ label a:hover{
   }
 }
 
+
+@media only screen and (max-width: 380px) {
+	.form__input {
+    max-width: 250px;
+    padding: 0.2em 0.9em 0.2em 0.9em;
+  }
+  .h1-valor{
+    font-size: 54px;
+  }
+  }
 
 
 
