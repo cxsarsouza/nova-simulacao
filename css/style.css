@@ -47,6 +47,14 @@
   font-display: swap;
 }
 
+:root {
+  --principal: #10af00;
+  --white: #fff;
+  --hover:#086400;
+  --clara:#b6e7b2;
+}
+
+
 
 html{
     scroll-behavior: smooth;
@@ -62,7 +70,7 @@ html{
   
   
   .navbar {
-    background: #10af00;
+    background: var(--principal);
     height: 75px;
     display: flex;
     justify-content: center;
@@ -76,7 +84,7 @@ html{
 
 
 body {
-  background: #ffffff;
+  background: var(--white);
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
   
@@ -92,7 +100,7 @@ a:hover{
 
 a:active{
   text-decoration: none !important;
-  color: #10af00 !important;
+  color: var(--principal) !important;
 }
 
 .container{
@@ -109,14 +117,14 @@ a:active{
 
 #preloader {
   overflow: hidden;
-  background: #10af00;
+  background: var(--principal);
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
   position: fixed;
   z-index: 9999999;
-  color: #fff;
+  color: var(--white);
 }
 
 #preloader .jumper {
@@ -132,7 +140,7 @@ a:active{
 }
 
 #preloader .jumper > div {
-  background-color: #fff;
+  background-color: var(--white);
   width: 10px;
   height: 10px;
   border-radius: 100%;
@@ -319,13 +327,13 @@ a:active{
 
 .i-main{
   margin-right: 25px;
-  color: #10af00;
+  color: var(--principal);
   font-size: 55px;
 }
 
 .i-more{
   margin-right: 15px;
-  color: #10af00;
+  color: var(--principal);
   font-size: 43px;
 }
 
@@ -350,7 +358,7 @@ a:active{
 	.main-title{
 		margin: 0px;
     padding-top:  0px;
-    font-size: 22px;
+    font-size: 34px;
 	  }
    .more-title{
 		margin: 0px;
@@ -388,7 +396,7 @@ a:active{
 }
 
 .a-links{
-  color: #10af00;
+  color: var(--principal);
   font-style: italic;
   font-weight: 100;
   text-decoration: underline !important;
@@ -396,25 +404,22 @@ a:active{
 }
 
 .tel-link{
-  color: #fff;
-  background-color: #10af00;
+  color: var(--principal);
   border-radius: 3px;
-  padding: 1px 27px;
   font-weight: 100;
-  text-decoration: none !important;
+  text-decoration: underline !important;
   font-size: 18px;
 }
 
 .tel-link:hover{
-  color: #fff;
-  background-color: #086300;
-  text-decoration: none !important;
+  color: var(--hover);
+  text-decoration: underline !important;
   transition: .5s;
 }
 
 .a-links:hover{
   transition: 0.5s;
-  color: #086400;
+  color: var(--hover);
 }
 
 .h5-features{
@@ -427,8 +432,8 @@ a:active{
 }
 
 .main-a{
-  background-color: #10af00;
-  color: #fff;
+  background-color: var(--principal);
+  color: var(--white);
   padding: 4px 20px;
   margin: 0px 10px;
   font-weight: 900;
@@ -439,16 +444,16 @@ a:active{
 
 .main-a:hover{
   background-color: #b35c0b;
-  color: #fff;
+  color: var(--white);
   text-decoration: none;
   transition: 0.4s;
 }
 
 .btn-main-1{
-  background-color: #10af00;
+  background-color: var(--principal);
   font-size: 23px;
-  color: #fff;
-  border: 2px solid #10af00;
+  color: var(--white);
+  border: 2px solid var(--principal);
   padding: 4px 45px;
   border-radius: 8px;
   font-weight: 700;
@@ -457,18 +462,18 @@ a:active{
 }
 
 .btn-main-1:hover{
-  background-color: #ffffff;
-  color: #10af00;
-  border: 2px solid #10af00;
+  background-color: var(--white);
+  color: var(--principal);
+  border: 2px solid var(--principal);
   text-decoration: none;
   transition: 0.5s;
 }
 
 .btn-main-2{
-  background-color: #fff;
+  background-color: var(--white);
   font-size: 18px;
-  color: #10af00;
-  border: 2px solid #10af00;
+  color: var(--principal);
+  border: 2px solid var(--principal);
   padding: 7px 25px;
   border-radius: 8px;
   font-weight: 500;
@@ -477,9 +482,9 @@ a:active{
 }
 
 .btn-main-2:hover{
-  background-color: #10af00;
-  color: #fff;
-  border: 2px solid #10af00;
+  background-color: var(--principal);
+  color: var(--white);
+  border: 2px solid var(--principal);
   transition: 0.5s;
   text-decoration: none;
 }
@@ -487,7 +492,7 @@ a:active{
 .btn-main-3{
   background-color: rgb(173, 32, 32);
   font-size: 23px;
-  color: #fff;
+  color: var(--white);
   border: 2px solid rgb(173, 32, 32)0;
   padding: 4px 45px;
   border-radius: 8px;
@@ -497,7 +502,7 @@ a:active{
 }
 
 .btn-main-3:hover{
-  background-color: #ffffff;
+  background-color: var(--white);
   color: rgb(173, 32, 32);
   border: 2px solid rgb(173, 32, 32);
   text-decoration: none;
@@ -505,10 +510,10 @@ a:active{
 }
 
 .more-btn-1{
-  background-color: #10af00;
+  background-color: var(--principal);
   font-size: 23px;
-  color:#fff;
-  border: 2px solid #10af00;
+  color:var(--white);
+  border: 2px solid var(--principal);
   padding: 12px 37px;
   border-radius: 8px;
   font-weight: 500;
@@ -517,19 +522,19 @@ a:active{
 }
 
 .more-btn-1:hover{
-  background-color: #ffffff;
-  color: #10af00;
-  border: 2px solid #10af00;
+  background-color: var(--white);
+  color: var(--principal);
+  border: 2px solid var(--principal);
   text-decoration: none;
   transition: 0.5s;
 }
 
 
 .more-btn-2{
-  background-color: #fff;
+  background-color: var(--white);
   font-size: 23px;
-  color: #10af00;
-  border: 2px solid #10af00;
+  color: var(--principal);
+  border: 2px solid var(--principal);
   padding: 12px 37px;
   border-radius: 8px;
   font-weight: 500;
@@ -538,9 +543,9 @@ a:active{
 }
 
 .more-btn-2:hover{
-  background-color: #10af00;
-  color: #fff;
-  border: 2px solid #10af00;
+  background-color: var(--principal);
+  color: var(--white);
+  border: 2px solid var(--principal);
   transition: 0.5s;
   text-decoration: none;
 }
@@ -551,8 +556,8 @@ a:active{
 
 .a-tel{
   font-size: 16px;
-  background-color: #10af00;
-  color: #fff;
+  background-color: var(--principal);
+  color: var(--white);
   font-weight: 800;
   padding: 5px 15px;
   border-radius: 5px;
@@ -626,7 +631,7 @@ input::placeholder {
   height: 100px;
   max-width: 715px;
   text-align: center;
-  color: #10af00;
+  color: var(--principal);
   font-size: 55px;
   font-weight: 900;
 }
@@ -649,7 +654,7 @@ input::placeholder {
 }
 
 .form__input:invalid {
-  border-color: #10af00;
+  border-color: var(--principal);
 }
 
 .more-i{
@@ -692,15 +697,15 @@ input::placeholder {
 .h1-valor{
   font-weight: 900;
   font-size: 85px;
-  color: #10af00;
+  color: var(--principal);
   padding-bottom: 10px;
   font-family: 'Mont';
   animation: go-back 1.5s infinite alternate;
 }
 
 .btn-contratação{
-  background-color: #10af00;
-  color: #ffff;
+  background-color: var(--principal);
+  color: var(--white);
   margin-top: 10px;
   padding: 4px 45px 4px 45px;
   border-radius: 10px;
@@ -711,8 +716,8 @@ input::placeholder {
 
 .btn-contratação:hover{
   transition: 0.5s;
-  color: #ffff;
-  background-color: #086400;
+  color: var(--white);
+  background-color: var(--hover);
   text-decoration: none !important;
 }
 
@@ -742,7 +747,7 @@ input::placeholder {
   border-radius: 8px;
   box-shadow: 0 3px 12px rgba(95, 92, 120, 0.12);
   cursor: pointer;
-  background-color: #fff;
+  background-color: var(--white);
 }
 
 .section-checkbox{
@@ -779,8 +784,8 @@ label {
   min-width: 330px;
   display: block;
   background: white;
-  border: 4px solid #b6e7b2;
-  color: #b6e7b2;
+  border: 4px solid var(--clara);
+  color: var(--clara);
   border-radius: 20px;
   padding: 1rem;
   margin-bottom: 1rem;
@@ -791,8 +796,8 @@ label {
 
 
 label a{
-  background-color: #b6e7b2;
-  color: #fff;
+  background-color: var(--clara);
+  color: var(--white);
   border: 0;
   padding: 5px 20px;
   border-radius: 5px;
@@ -804,14 +809,14 @@ label a{
 input[type=checkbox]:checked + label a{
   transition: 0.6s;
   transform: scale(1.05);
-  background: #fff;
-  color: #10af00;
+  background: var(--white);
+  color: var(--principal);
   border: 0;
 }
 
 input[type=checkbox]:checked + label a:hover{
-  background-color: #086400;
-  color: #fff;
+  background-color: var(--hover);
+  color: var(--white);
   transition: 0.5s;
 
 }
@@ -837,13 +842,13 @@ input[type=checkbox]:not(:checked) + label::after {
 input[type=checkbox]:checked + label {
   transition: 0.6s;
   transform: scale(1.05);
-  background: #10af00;
+  background: var(--principal);
   color: white;
   border: 0;
 
 }
 input[type=checkbox]:checked + label::after {
-  color: #10af00;
+  color: var(--principal);
   font-family: FontAwesome;
   content: "\f058";
   font-size: 55px;
@@ -883,8 +888,8 @@ label span{
 
 
 label a:hover{
-  background-color: #086400;
-  color: #fff;
+  background-color: var(--hover);
+  color: var(--white);
   transition: 0.5s;
 }
 
@@ -899,8 +904,8 @@ label a:hover{
 }
 .h4-bancos{
   font-size: 19px;
-  color: #fff;
-  background-color: #10af00;
+  color: var(--white);
+  background-color: var(--principal);
   font-weight: 800;
   padding: 7px 30px;
   border-radius: 50px;
@@ -947,12 +952,16 @@ label a:hover{
   }
   .p-nome{
     font-size: 15px;
+    margin: 0px 0px 25px 0px;
   }
   label{
     min-width: 260px;
   }
   label h1{
     font-size: 40px;
+  }
+  .tel-link{
+    font-size: 15px;
   }
   .div-animation{
     width: 320px;
@@ -978,8 +987,9 @@ label a:hover{
 
 @media only screen and (max-width: 380px) {
 	.form__input {
-    max-width: 250px;
+    max-width: 320px;
     padding: 0.2em 0.9em 0.2em 0.9em;
+    font-size: 28px;
   }
   .h1-valor{
     font-size: 54px;
