@@ -267,7 +267,7 @@ a:active{
 }
 
 .padding-main{
-  padding-top: 95px;
+  padding-top: 75px;
 }
 
 .main-section{
@@ -359,6 +359,19 @@ a:active{
   margin-bottom: 13px;
 }
 
+.title-prop{
+  font-weight: 700;
+  color: #353535;
+  letter-spacing: -1.5px;
+  font-size: 35px;
+  text-align: center;
+  margin: 0px 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 13px;
+}
+
 .op-title{
   font-weight: 700;
   color: #353535;
@@ -412,6 +425,11 @@ a:active{
     padding-top:  0px;
     font-size: 30px;
 	  }
+    .title-prop{
+    margin: 0px;
+    padding-top:  35px;
+    font-size: 30px;
+    }
     .title-valor{
       font-size: 15px;
     }
@@ -553,6 +571,24 @@ a:active{
   color: rgb(173, 32, 32);
   border: 2px solid rgb(173, 32, 32);
   text-decoration: none;
+  transition: 0.5s;
+}
+
+.a-main{
+    color: #fff;
+    font-size: 20px;
+    padding: 2px 20px;
+    border: 2px solid white;
+    border-radius: 37px;
+    background-color: #1f6dff;
+}
+.a-main:hover{
+  color: #fff;
+  background-color: #086400;
+  font-size: 20px;
+  padding: 2px 20px;
+  border: 2px solid #086400;
+  border-radius: 37px;
   transition: 0.5s;
 }
 
@@ -752,13 +788,14 @@ input::placeholder {
   font-weight: 900;
   font-size: 62px;
   max-width: 440px;
-  border: 3px solid #fff;
   border-radius: 70px;
-  background-color: #1f6dff;
+  border: 2px solid white;
+  background-color: rgb(31 109 255);
   color: var(--principal);
   padding: 2px 35px;
   font-family: 'Mont';
   animation: go-back 1.5s infinite alternate;
+  margin-bottom: 30px;
 }
 
 .btn-contratação{
@@ -852,6 +889,12 @@ label {
   
 }
 
+label svg{
+  fill: #c7c7c7;
+  text-align: center;
+  width: 110px;
+}
+
 
 label a{
   background-color: var(--clara);
@@ -896,6 +939,9 @@ input[type=checkbox]:not(:checked) + label::after {
   background: white;
 }
 
+input[type=checkbox]:checked + label svg {
+  fill: #fff;
+}
 
 input[type=checkbox]:checked + label {
   transition: 0.6s;
